@@ -16,7 +16,7 @@ def display_streams(URL):
 	print("Video length is : {} Minutes".format(sec))
 	print("Rating is : ",round(yt.rating,1))
 	print("Views are : ",yt.views)
-	#yt.streams.get_highest_resolution().download()
+	yt.streams.get_highest_resolution().download()
 	#print("Download Completed & saved at location : ",pwd+"/"+yt.title)
 
 display_streams(URL)
